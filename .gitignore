@@ -1,6 +1,11 @@
 .env
 credentials.json
+token.json
+businesses.db
+clienr_secret.json
+client_secret_*.json
 .venv/
+.idea/
 .idea/
 __pycache__/
 *.pyc

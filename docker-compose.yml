@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  whatsapp_bot:
+    build: .
+    container_name: whatsapp_bot_service
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - businesses_db_data:/app/businesses.db
+    restart: always
+
+volumes:
+  businesses_db_data:
+    driver: local

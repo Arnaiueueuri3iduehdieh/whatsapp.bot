@@ -2,9 +2,9 @@ import subprocess
 import sys
 import time
 import logging
-
+from dotenv import load_dotenv
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
-
+load_dotenv()
 def main():
     logging.info("🚀 Запуск системы WhatsApp.bot...")
     
